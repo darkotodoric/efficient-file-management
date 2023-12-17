@@ -1,4 +1,4 @@
-# Efficient File Storage System
+# Efficient File Storage
 The `FileStorage` class is a highly efficient PHP solution for managing and storing an extensive number of files, potentially in the order of billions, while maintaining exceptional performance. It achieves this scalability by organizing files into a hierarchical folder structure based on unique IDs (from database) and file extensions.
 
 ## Folder and file structures

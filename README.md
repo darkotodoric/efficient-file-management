@@ -1,8 +1,8 @@
-# Efficient File Storage
-The `FileStorage` class is a highly efficient PHP solution for managing and storing an extensive number of files, potentially in the order of billions, while maintaining exceptional performance. It achieves this scalability by organizing files into a hierarchical folder structure based on unique IDs (from database) and file extensions.
+# Efficient File Management
+The `FileManagement` class is a highly efficient PHP solution for managing and storing an extensive number of files, potentially in the order of billions, while maintaining exceptional performance. It achieves this scalability by organizing files into a hierarchical folder structure based on unique IDs (from database) and file extensions.
 
 ## Folder and file structures
-Here's an example of how the folder structure and files might look when using the `FileStorage` class to store files with IDs and extensions:
+Here's an example of how the folder structure and files might look when using the `FileManagement` class to store files with IDs and extensions:
 Suppose we have the following files:
 
  - File with ID `123456`, `987654`, `555555` and extension `json`
@@ -35,7 +35,7 @@ In this structure:
  - Files with the `.txt` extension are stored in the `txt` folder.
  - Each folder is further organized into subfolders based on the integer division of the file's ID by 50000. This hierarchical organization ensures that even with a vast number of files, the system remains efficient and easily manageable.
 
-This example demonstrates the efficient organization and storage of files using the FileStorage class, even when dealing with a large number of files.
+This example demonstrates the efficient organization and storage of files using the FileManagement class, even when dealing with a large number of files.
 
 ## Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests to improve this project.

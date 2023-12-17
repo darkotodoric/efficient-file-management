@@ -1,9 +1,9 @@
 <?php
 
-class FileStorage
+class FileManagement
 {
     /** @var string */
-    private $folderPath = '/mnt/file-storage/';
+    private $folderPath = '/mnt/file-management/';
 
     /** @var array */
     private $allowedExtensions = ['json', 'xml', 'txt'];

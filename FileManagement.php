@@ -3,27 +3,29 @@
 class FileManagement
 {
     /** @var string */
-    private $folderPath = '/mnt/file-management/';
+    private string $folderPath = '/mnt/file-management/';
 
     /** @var array */
-    private $allowedExtensions = ['json', 'xml', 'txt'];
+    private array $allowedExtensions = ['json', 'xml', 'txt'];
 
     /**
      * @param int $id
+     * @param string $extension
      *
      * @return string
      */
-    private function getFolderPath($id, $extension)
+    private function getFolderPath(int $id, string $extension): string
     {
         return $this->folderPath . $extension . '/' . floor($id / 50000) . '/';
     }
 
     /**
      * @param int $id
+     * @param string $extension
      *
      * @return string|null
      */
-    private function getFilePath($id, $extension)
+    private function getFilePath(int $id, string $extension): ?string
     {
         if(!in_array($extension, $this->allowedExtensions)){
             return null;
@@ -45,7 +47,7 @@ class FileManagement
      *
      * @return string|null
      */
-    public function getContent($id, $extension)
+    public function getContent(int $id, string $extension): ?string
     {
         $filePath = $this->getFilePath($id, $extension);
         if(empty($filePath)){
@@ -62,7 +64,7 @@ class FileManagement
      *
      * @return bool
      */
-    public function saveContent($id, $extension, $content)
+    public function saveContent(int $id, string $extension, string $content): bool
     {
         if(empty($content)){
             return false;
@@ -88,7 +90,7 @@ class FileManagement
      *
      * @return bool
      */
-    public function deleteContent($id, $extension)
+    public function deleteContent(int $id, string $extension): bool
     {
         $filePath = $this->getFilePath($id, $extension);
         if(empty($filePath)){

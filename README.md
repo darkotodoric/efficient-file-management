@@ -12,7 +12,7 @@ Suppose we have the following files:
 The resulting folder structure might look like this:
 
 ```
-/mnt/file-storage/
+/mnt/file-management/
     ├── json/
     │   ├── 2/
     │   │   └── 123456.json

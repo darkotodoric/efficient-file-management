@@ -1,0 +1,25 @@
+{
+  "name": "darkotodoric/efficient-file-management",
+  "description": "PHP-based file management system designed for seamless storage and retrieval of large volumes of files with optimal performance",
+  "keywords": ["php", "file-management"],
+  "homepage": "https://github.com/darkotodoric/efficient-file-management",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Darko Todorić",
+      "homepage": "https://github.com/darkotodoric"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6"
+  },
+  "autoload": {
+    "psr-0": {
+      "FileManagement": ""
+    }
+  }
+}

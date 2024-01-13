@@ -1,7 +1,7 @@
 # Efficient File Management
 
-![Packagist License](https://img.shields.io/packagist/l/efficient-file-management)
-![Packagist Version](https://img.shields.io/packagist/v/efficient-file-management)
+![Packagist License](https://img.shields.io/packagist/l/darkotodoric/efficient-file-management)
+![Packagist Version](https://img.shields.io/packagist/v/darkotodoric/efficient-file-management)
 
 The `EfficientFileManagement` class is a highly efficient PHP solution for managing and storing an extensive number of
 files, potentially in the order of billions, while maintaining exceptional performance. It achieves this scalability by
